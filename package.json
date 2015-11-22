@@ -59,6 +59,7 @@
     "npm-watch": "0.0.1",
     "postcss-cli": "^2.3.2",
     "uglify-js": "^2.6.1",
-    "watch": "^0.16.0"
+    "watch": "^0.16.0",
+    "wiredep": "^2.2.2"
   }
 }

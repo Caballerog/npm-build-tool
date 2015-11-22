@@ -40,6 +40,10 @@ The tool checks to see if images have changed before optimizing them.
 -  `npm run clean:images`: Clean your images folder in your production app.
 -  `npm run lint:js`: Run Lint in your source JS code.
 
+# More info
+[How to use npm as a build tool](http://blog.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/) 
+
+
 # TO-DO
 - Integrated liveReload.
 - JavaScript dependencies Script (e.g. using uglifyJS2).
