@@ -6,11 +6,12 @@ Using npm as a build tool instead of Grunt or Gulp.
 - Automatically lint your scripts.
 - Automatically minify your HTML, CSS and JS using htmlminifier, css-clean and uglifyJS2.
 - CSS Autoprefixing using PostCSS.
+- Update the references in your html from orginals to an optionally versioned, optimized file using useref-file.
 - Awesome image optimization using imagemin-newer (You can use subfolder).
 The tool checks to see if images have changed before optimizing them.
 - Automatically wire-up dependencies installed with Bower using wiredep.
 - Automatically create your JavaScript documentation using jsDoc.
-- Automatically create a hashmark in your new JavaScript file and CSS file for avoid cache problems.
+- ~~Automatically create a hashmark in your new JavaScript file and CSS file for avoid cache problems.~~ (Problems with useref-file).
 
 # Getting started
 - Install dependencies: `npm install`.
@@ -44,9 +45,10 @@ The tool checks to see if images have changed before optimizing them.
 [How to use npm as a build tool](http://blog.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/) 
 
 
-
 # TO-DO
-- Integrated liveReload.
+- hashmark integration.
+- autocreation of sprites.
+- liveReload integration.
 - JavaScript dependencies Script (e.g. using uglifyJS2).
 - Preprocessador CSS (e.g. using Less/SASS)
 - AngularJS dependencies inyection.
