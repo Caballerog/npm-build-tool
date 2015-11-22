@@ -43,7 +43,7 @@
     "build:js": "npm run minify:js",
     "prebuild:images": "npm run clean:images",
     "build:images": "npm run minify:images",
-    "build": "echo '=> building'  && npm run build:css -s && npm run build:js -s && npm run build:html -s && npm run build:images -s",
+    "build": "echo '=> building'  && npm run clean && npm run build:css -s && npm run build:js -s && npm run build:html -s && npm run build:images -s",
     "build:watch": "npm run build && npm-watch"
   },
   "author": "Carlos Caballero González",
