@@ -1,4 +1,4 @@
-# npm-tool
+# npm-build-tool
 Using npm as a build tool instead of Grunt or Gulp.
 
 # Features
@@ -7,8 +7,7 @@ Using npm as a build tool instead of Grunt or Gulp.
 - Automatically minify your HTML, CSS and JS using htmlminifier, css-clean and uglifyJS2.
 - CSS Autoprefixing using PostCSS.
 - Update the references in your html from orginals to an optionally versioned, optimized file using useref-file.
-- Awesome image optimization using imagemin-newer (You can use subfolder).
-The tool checks to see if images have changed before optimizing them.
+- Awesome image optimization using imagemin (You can use subfolder).
 - Automatically wire-up dependencies installed with Bower using wiredep.
 - Automatically create your JavaScript documentation using jsDoc.
 - ~~Automatically create a hashmark in your new JavaScript file and CSS file for avoid cache problems.~~ (Problems with useref-file).
