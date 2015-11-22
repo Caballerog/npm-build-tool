@@ -32,7 +32,7 @@
     "preminify:images": "npm run clean:images && npm run cp:images ",
     "minify:images": "echo '=> minify:images' && find $npm_package_config_distImages -type f | imagemin ",
     "bower:html": "wiredep -s $npm_package_config_dist/$npm_package_main",
-    "autoprefixer:css": "echo '=> autoprefixer:css' && postcss --use autoprefixer -b 'last 2 versions' $npm_package_config_srcCSS",
+    "autoprefixer:css": "postcss --use autoprefixer -b 'last 2 versions' $npm_package_config_srcCSS",
     "build:doc": "jsdoc $npm_package_config_srcJS -d $npm_package_config_distDoc",
     "prebuild:html": "cp $npm_package_config_src/$npm_package_main $npm_package_config_dist/",
     "build:html": "npm run bower:html && useref $npm_package_config_dist/$npm_package_main $npm_package_config_dist/$npm_package_main  && npm run minify:html",
