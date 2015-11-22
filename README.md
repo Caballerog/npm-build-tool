@@ -16,7 +16,8 @@ The tool checks to see if images have changed before optimizing them.
 # Getting started
 - Install dependencies: `npm install`.
 - Configure your variables in `package.json`.
-- Run `npm run build` to build your production build.
+- Run `npm run build` to build your production code or run `npm run build:watch` to build your production code with watch feature.
+
 
 # Configuration in package.json
 - `"main"`: Index file of your app (Default src/).
