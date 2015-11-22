@@ -19,10 +19,10 @@ The tool checks to see if images have changed before optimizing them.
 
 # Configuration in package.json
 - `"main"`: Index file of your app (Default src/).
-- `"config"`: JSON Object with configuration's object.
+- `"config"`: Configuration.
  - `"src"`: Top level folder of your source code.
- -  `"srcJS"`: Folder of your JavaScript source code (Default src/****/*.js).
- -  `"srcCSS"`: Folder of your CSS source code. (Default src/****/*.css).
+ -  `"srcJS"`: List of your JavaScript source code to minify you can use glob (Default src/****/*.js).
+ -  `"srcCSS"`: List of your CSS source code to minify you can use glob (Default src/****/*.css).
  -  `"srcImages"`: Folder of your images (Default src/assets/images/).
  -  `"distJS`: Production folder of your JavaScript (Default dist/js/).
  -  `"distCSS`: Production folder of your CSS (Default /dist/css/).
@@ -42,6 +42,7 @@ The tool checks to see if images have changed before optimizing them.
 
 # More info
 [How to use npm as a build tool](http://blog.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/) 
+
 
 
 # TO-DO
