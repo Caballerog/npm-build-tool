@@ -1,11 +1,12 @@
 {
   "name": "npm-build-tool",
   "version": "0.0.1",
-  "description": "",
+  "description": "npm as build tool instead of Gulp or Grunt",
   "main": "index.html",
   "config": {
     "src": "src",
-    "srcJS": "src/js/controlador.js src/js/vista.js src/js/modelo.js",
+    "srcJS": "src/**/*.js",
+    "srcJS2": "src/js/controlador.js src/js/vista.js src/js/modelo.js",
     "srcCSS": "src/**/*.css",
     "srcImages": "src/images/*",
     "dist": "dist",
