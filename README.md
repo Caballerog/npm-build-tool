@@ -34,6 +34,7 @@ Using npm as a build tool instead of Grunt or Gulp.
 
 -  `npm run build`: Build your production app.
 -  `npm run build:watch`: Build your production app and watcher any change in your code.
+-  `npm run:build:doc`: Build your jsDoc documentation.
 -  `npm run build:images`: Minify your images.
 -  `npm run clean`: Clean your production app.
 -  `npm run clean:css`: Clean your CSS folder in your production app.
@@ -49,6 +50,5 @@ Using npm as a build tool instead of Grunt or Gulp.
 - hashmark integration.
 - autocreation of sprites.
 - liveReload integration.
-- JavaScript dependencies Script (e.g. using uglifyJS2).
 - Preprocessador CSS (e.g. using Less/SASS)
 - AngularJS dependencies inyection.

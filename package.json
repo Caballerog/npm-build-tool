@@ -6,7 +6,6 @@
   "config": {
     "src": "src",
     "srcJS": "src/**/*.js",
-    "srcJS2": "src/js/controlador.js src/js/vista.js src/js/modelo.js",
     "srcCSS": "src/**/*.css",
     "srcImages": "src/images/*",
     "dist": "dist",
@@ -16,6 +15,7 @@
     "distDoc": "dist/doc/"
   },
   "watch": {
+    "build:html": "**/.html",
     "build:js": "src/**/*.js",
     "build:css": "src/**/*.css"
   },
@@ -34,6 +34,7 @@
     "minify:images": "echo '=> minify:images' && find $npm_package_config_distImages -type f | imagemin ",
     "bower:html": "wiredep -s $npm_package_config_dist/$npm_package_main",
     "autoprefixer:css": "postcss --use autoprefixer -b 'last 2 versions' $npm_package_config_srcCSS",
+    "livereload-dev": "live-reload --port 9091 dist/",
     "build:doc": "jsdoc $npm_package_config_srcJS -d $npm_package_config_distDoc",
     "prebuild:html": "cp $npm_package_config_src/$npm_package_main $npm_package_config_dist/",
     "build:html": "npm run bower:html && useref $npm_package_config_dist/$npm_package_main $npm_package_config_dist/$npm_package_main  && npm run minify:html",
@@ -44,8 +45,9 @@
     "build:js": "npm run minify:js",
     "prebuild:images": "npm run clean:images",
     "build:images": "npm run minify:images",
-    "build": "echo '=> building'  && npm run clean && npm run build:css -s && npm run build:js -s && npm run build:html -s && npm run build:images -s",
-    "build:watch": "npm run build && npm-watch"
+    "build": "echo '=> building'  && npm run clean && npm run build:css -s && npm run build:js -s && npm run build:html -s && npm run build:images -s && npm run build:doc",
+    "build:watch": "npm run build && npm-watch",
+    "build:serve-dev": "npm-watch & npm run livereload-dev"
   },
   "author": "Carlos Caballero González",
   "license": "GPLv3.0",
@@ -57,6 +59,7 @@
     "imagemin-cli": "^2.0.0",
     "jsdoc": "^3.4.0",
     "jshint": "^2.8.0",
+    "live-reload": "^1.1.0",
     "main-bower-files": "^2.9.0",
     "npm-watch": "0.0.1",
     "postcss-cli": "^2.3.2",
